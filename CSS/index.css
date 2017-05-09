@@ -12,6 +12,9 @@ h2, h3, .machine{
     text-align: center;
 }
 
-#boutonJouer {
-
+#credits {
+    width: 5vw;
+    text-align: center;
+    background: none;
+    border: none;
 }
