@@ -6,33 +6,36 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>casino-en-ligne.fr</title> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
+    
 </head>
 <body> 
      <h1>
          Machine A Sous
      </h1>
-     
+     <p id="regles">
+         Le but du jeu est d'obtenir 4 fois le même symbole. Si vous y parvenez, vous gagnerez 5 crédits. Nous vous offrons vos 20 premiers crédits. Pour commencer à jouer, cliquer sur le bouton "Jouer !".
+     </p>
      <h2>
-         Votre score est : 
+         Votre meilleur score est : 
+         <input type="text" id="score" value=20 disabled="true">
      </h2>
      
      <h3>
         Il vous reste         
-        <input type="text" id="credits" value=20>
+        <input type="text" id="credits" value=20 disabled="true">
          crédit(s)
     </h3>
+    <span id="message"></span>
      <div class="machine">
          <img id="img1" src="img/img0.png"/>
          <img id="img2" src="img/img1.png"/>
          <img id="img3" src="img/img2.png"/>
          <img id="img4" src="img/img3.png"/><br><br>
-         <button id="boutonJouer">Jouer !</button>
+         <button id="boutonJouer" disabled>Jouer !</button>
      </div>
-     
-     <span id="perdu"></span>
-     
-     
+
      <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
      <script src="JS/machineasous.js"></script>
 </body> 

@@ -1,5 +1,8 @@
 body {
-    background-color: antiquewhite;
+    background-color: #691212;
+    background: url(../img/zig%20zag%20wool.png);
+    color: white;
+    font-family: 'Source Code Pro', monospace;
 }
 
 h1 {
@@ -8,13 +11,32 @@ h1 {
     letter-spacing: 5px;
 }
 
+#regles {
+    text-align: center;
+    font-style: italic;
+    
+}
+
 h2, h3, .machine{
     text-align: center;
 }
 
-#credits {
-    width: 5vw;
+input {
+    width: 5.5vw;
     text-align: center;
+    color: white;
     background: none;
     border: none;
+    font-size: 1.5em;
+}
+
+button {
+    width: 10vw;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+button:hover {
+    border: black 2px solid;
 }
