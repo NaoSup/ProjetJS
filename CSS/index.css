@@ -1,0 +1,17 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h2, h3, .machine{
+    text-align: center;
+}
+
+#boutonJouer {
+
+}
