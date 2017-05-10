@@ -18,7 +18,7 @@
          Le but du jeu est d'obtenir 4 fois le même symbole. Si vous y parvenez, vous gagnerez 5 crédits. Nous vous offrons vos 20 premiers crédits. Pour commencer à jouer, cliquer sur le bouton "Jouer !".
      </p>
      <h2>
-         Votre meilleur score est : 
+         Meilleur score : 
          <input type="text" id="score" value=20 disabled="true">
      </h2>
      
@@ -27,15 +27,26 @@
         <input type="text" id="credits" value=20 disabled="true">
          crédit(s)
     </h3>
+    
+    <!-- Emplacement pour l'affichage du message de fin de partie !-->
+    <div class="message">
     <span id="message"></span>
+    </div>
+    
      <div class="machine">
          <img id="img1" src="img/img0.png"/>
          <img id="img2" src="img/img1.png"/>
          <img id="img3" src="img/img2.png"/>
          <img id="img4" src="img/img3.png"/><br><br>
-         <button id="boutonJouer" disabled>Jouer !</button>
+         <button id="boutonJouer" disabled>Jouer</button>
      </div>
-
+    
+    <footer>
+        <p>
+            Fait par Naomi Paulmin 
+        </p>
+    </footer>
+    
      <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
      <script src="JS/machineasous.js"></script>
 </body> 

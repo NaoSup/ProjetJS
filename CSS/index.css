@@ -9,12 +9,16 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
+    margin-bottom: 8vh;
 }
 
 #regles {
     text-align: center;
     font-style: italic;
-    
+    margin-bottom: 5vh;
+    padding: 3vh;
+    border-top: 2px white dashed;
+    border-bottom: 2px white dashed;
 }
 
 h2, h3, .machine{
@@ -30,13 +34,38 @@ input {
     font-size: 1.5em;
 }
 
+.message {
+    text-align: center;
+}
+
+img {
+    margin-top: 2vh;
+}
+
 button {
     width: 10vw;
     padding: 10px;
     border-radius: 20px;
+    text-transform: uppercase;
+    outline: none;
+    color: white;
+    background: black;
     
 }
 
 button:hover {
-    border: black 2px solid;
+    border: black 3px solid;
+    font-weight: bold;
+    color: black;
+    background: white;
+    
+}
+
+footer {
+    font-size: 0.8em;  
+    font-style: italic;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;    
 }
