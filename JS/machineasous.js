@@ -28,8 +28,17 @@ $('#boutonJouer').click(
         if (a == b && b == c & c == d) {
             credits += 5;
             $('#credits').attr('value', credits);
+            $('#message').text("Bravo ! Vous avez 4 symboles identiques ! Vous gagnez 5 crédits.");
         }
-
+        else if ((a == b && b == c) ^ (a == b && b == d) ^ (b ==c && c == d) ^ (a == c && c == d)) {
+            credits += 3;
+            $('#credits').attr('value', credits);
+            $('#message').text("Presque ! Vous avez 3 symboles identiques. Vous gagnez 3 crédits.");
+        }
+        else {
+            $('#message').text("Essayez à nouveau.");
+        }
+        
         //On récupère le meilleur score
         if (credits > score) {
             score = credits;
@@ -49,6 +58,7 @@ $('#boutonJouer').click(
         }
     }
 );
+
 
 //On déclanche la fonction recommencer lorsqu'on clique sur le bouton Recommencer
 $('#boutonRecommencer').click(
