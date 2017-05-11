@@ -19,10 +19,10 @@ $('#boutonJouer').click(
         var d = Math.floor(Math.random() * 4);
 
         //On modifie les sources des images en fonction de l'indice précédent
-        $('#img1').attr('src', '../img/img' + a + '.png').fadeToggle(0).fadeToggle(200);
-        $('#img2').attr('src', '../img/img' + b + '.png').fadeToggle(0).fadeToggle(200);
-        $('#img3').attr('src', '../img/img' + c + '.png').fadeToggle(0).fadeToggle(200);
-        $('#img4').attr('src', '../img/img' + d + '.png').fadeToggle(0).fadeToggle(200);
+        $('#img1').attr('src', './img/img' + a + '.png').fadeToggle(0).fadeToggle(200);
+        $('#img2').attr('src', './img/img' + b + '.png').fadeToggle(0).fadeToggle(200);
+        $('#img3').attr('src', './img/img' + c + '.png').fadeToggle(0).fadeToggle(200);
+        $('#img4').attr('src', './img/img' + d + '.png').fadeToggle(0).fadeToggle(200);
 
         //Si les 4 symboles sont identiques on rajoute 5 crédits
         if (a == b && b == c & c == d) {
@@ -67,10 +67,10 @@ $('#boutonRecommencer').click(
         $('#credits').attr('value', 20);
 
         //On réinitialise les images
-        $('#img1').attr('src', '../img/img0.png').fadeToggle(0).fadeToggle(200);
-        $('#img2').attr('src', '../img/img1.png').fadeToggle(0).fadeToggle(200);
-        $('#img3').attr('src', '../img/img2.png').fadeToggle(0).fadeToggle(200);
-        $('#img4').attr('src', '../img/img3.png').fadeToggle(0).fadeToggle(200);
+        $('#img1').attr('src', './img/img0.png').fadeToggle(0).fadeToggle(200);
+        $('#img2').attr('src', './img/img1.png').fadeToggle(0).fadeToggle(200);
+        $('#img3').attr('src', './img/img2.png').fadeToggle(0).fadeToggle(200);
+        $('#img4').attr('src', './img/img3.png').fadeToggle(0).fadeToggle(200);
 
         //On réactive le bouton Jouer
         $('#boutonJouer').prop('disabled', false).prop('hidden', false);
